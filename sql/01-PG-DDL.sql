@@ -1,5 +1,5 @@
--- Note: uuid-ossp extension not required for these tables
--- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Enable UUID extension for uuid_generate_v4() function
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS RELYING_PARTIES (
     --id UUID PRIMARY KEY DEFAULT uuid_generate_v1(),  -- Time-based UUID
