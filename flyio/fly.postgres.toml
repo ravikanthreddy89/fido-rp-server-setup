@@ -5,8 +5,8 @@ primary_region = "ord"
   image = "postgres:15-alpine"
 
 [[mounts]]
-  source = "postgres_data"
-  destination = "/var/lib/postgresql/data"
+  source = "pg_data"
+  destination = "/data"
 
 [[services]]
   protocol = "tcp"
