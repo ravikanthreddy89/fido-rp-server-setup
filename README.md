@@ -120,6 +120,20 @@ fly secrets import --app <your-postgres-app> < .env
 fly deploy --config flyio/fly.postgres.toml --app <your-postgres-app>
 fly deploy --config flyio/fly.redis.toml --app <your-redis-app>
 ```
+
+### 4. Delete Fly.io Resources
+
+```bash
+fly apps destroy <your-postgres-app>
+fly apps destroy <your-redis-app>
+```
+
+To also remove volumes:
+
+```bash
+fly volumes list --app <your-postgres-app>
+fly volumes destroy <volume-id> --app <your-postgres-app>
+```
 ### NOTE: To keep things simple, Fly.io setup scripts doesn't include boostrapping sql scripts execution. Manual execution is needed after postgres container is created. 
 
 ## Common Commands
