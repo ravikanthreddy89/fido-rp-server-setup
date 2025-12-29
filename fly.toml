@@ -13,11 +13,6 @@ primary_region = 'ord'
   postgres = '/entrypoint.sh'
   redis = '/usr/bin/redis-server --port 6379 --bind 0.0.0.0 --appendonly yes --dir /data'
 
-[env]
-  POSTGRES_DB = 'demo_db'
-  POSTGRES_PASSWORD = 'password'
-  POSTGRES_USER = 'postgres'
-
 [[mounts]]
   source = 'postgres_data'
   destination = '/var/lib/postgresql/data'
