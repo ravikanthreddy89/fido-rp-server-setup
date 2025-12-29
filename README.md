@@ -13,7 +13,7 @@
 
 ### 1. Configure Environment Variables
 
-Copy `.env.sample` to `.env` and adjust values as needed:
+Copy `env.sample` to `.env` and adjust values as needed:
 
 ```bash
 cp .env.sample .env
